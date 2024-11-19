@@ -21,3 +21,8 @@ try:
 except:
     table = sqlite3.connect("schoolData.db")
     table = table.cursor()
+
+
+
+table.commit()
+table.close()
