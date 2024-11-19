@@ -22,7 +22,7 @@ except:
     table = sqlite3.connect("schoolData.db")
     table = table.cursor()
 
-
+db.execute("INSERT INTO Users (name, email) VALUES ('Alice' , 'Alice@email.com')")
 
 table.commit()
 table.close()
